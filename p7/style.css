@@ -1,0 +1,116 @@
+
+/* Design Tokens */
+
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e293b;
+    --accent-color: #f59e0b;
+
+    --background-color: #f1f5f9;
+    --text-color: #333333;
+
+    --small-spacing: 10px;
+    --medium-spacing: 20px;
+    --large-spacing: 40px;
+
+    --main-font: Arial, sans-serif;
+
+    --heading-size: 32px;
+    --paragraph-size: 16px;
+}
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--main-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header */
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: var(--large-spacing);
+}
+
+header h1 {
+    font-size: var(--heading-size);
+}
+
+/* Main Sections */
+
+main {
+    padding: var(--medium-spacing);
+}
+
+section {
+    background-color: white;
+    padding: var(--medium-spacing);
+    margin-bottom: var(--medium-spacing);
+    border-radius: 10px;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+p {
+    font-size: var(--paragraph-size);
+    line-height: 1.6;
+}
+
+/* Color Palette */
+
+.colors {
+    display: flex;
+    gap: var(--medium-spacing);
+    flex-wrap: wrap;
+}
+
+.color-box {
+    padding: var(--medium-spacing);
+    color: white;
+    border-radius: 8px;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+
+/* Spacing */
+
+.spacing-box {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--small-spacing);
+    margin-bottom: var(--small-spacing);
+}
+
+.large {
+    padding: var(--large-spacing);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: var(--medium-spacing);
+}
